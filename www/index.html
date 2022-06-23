@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="components/script.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="header">
+      API COIN
+  </div>
+  <div class="main">
+        <div class="contentBtn">
+            <button class="btnDefault" id="btn1">CONVERTER USD-BRL</button>
+            <button class="btnDefault" id="btn2">CONVERTER EUR-BRL</button>
+            <button class="btnDefault" id="btn3">CONVERTER BTC-BRL</button>
+            <h1>Dados da conversão</h1>
+        </div>
+        <div class="contentP">
+            <p>Compra: <span id="compra"></span></p>
+            <p>Venda:<span id="venda"></span></p>
+            <p>Variação: <span id="variacao"></span></p>
+            <p>Máximo: <span id="max"></span></p>
+            <p>Minímo: <span id="min"></span></p>
+        </div>
+  </div>
+  <div></div>
+</body>
+</html>
