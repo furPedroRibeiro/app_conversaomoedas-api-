@@ -18,14 +18,22 @@
   </div>
   <div class="main">
         <div class="contentBtn">
-            <button class="btnDefault" id="btn1">CONVERTER USD-BRL</button>
-            <button class="btnDefault" id="btn2">CONVERTER EUR-BRL</button>
-            <button class="btnDefault" id="btn3">CONVERTER BTC-BRL</button>
-            <h1>Dados da conversão</h1>
+            <div class="radio">
+                <input type="radio" id="real" name="coinTo" value="Real">
+                <label for="real">Real</label><br>
+                <input type="radio" id="dolar" name="coinTo" value="Dólar">
+                <label for="dolar">Dólar</label><br>
+                <input type="radio" id="euro" name="coinTo" value="Euro">
+                <label for="euro">Euro</label>
+            </div>
+            <button class="btnDefault" id="btn1"><span id="span1">COTAÇÃO</span></button>
+            <button class="btnDefault" id="btn2"><span id="span2">COTAÇÃO</span></button>
+            <button class="btnDefault" id="btn3"><span id="span3">COTAÇÃO</span></button>
+            <h1>Dados da cotação(<span id="cotX"></span>)</h1>
         </div>
         <div class="contentP">
             <p>Compra: <span id="compra"></span></p>
-            <p>Venda:<span id="venda"></span></p>
+            <p>Venda: <span id="venda"></span></p>
             <p>Variação: <span id="variacao"></span></p>
             <p>Máximo: <span id="max"></span></p>
             <p>Minímo: <span id="min"></span></p>
